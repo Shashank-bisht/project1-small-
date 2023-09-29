@@ -1,0 +1,77 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500;600;700&family=Martian+Mono:wght@300&family=Poppins:ital,wght@0,200;0,300;1,200&family=Roboto:wght@300&display=swap');
+
+*{
+  margin: 0;
+}
+  :root{
+    --red:#D01C28
+  }
+  body{
+    
+font-family: 'Poppins', sans-serif;
+
+  }
+.container{
+    margin: 0 auto;
+    max-width: 1000px;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  height: 72px;
+  align-items: center;
+}
+
+li{
+  width: 82px;
+}
+nav ul{
+  display: flex;
+  /* max-width: 333px;
+  max-height: 24; */
+  list-style: none;
+  gap: 24px;
+}
+
+button{
+  all: unset;
+  padding:6px 16px;
+  background: var(--red);
+  height:32px;
+  color: white;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+.hero{
+  display: flex;
+  height: calc(100vh - 100px);
+  align-items: center;
+}
+
+.hero h1{
+  font-size: 69px;
+  line-height: 68px;
+  font-weight: 600;
+}
+.hero p{
+  margin-top: 19px;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 400;
+
+}
+.hero-btn{
+  display: flex;
+  gap: 30px;
+}
+.secondary-btn{
+background:transparent;
+color: grey;
+border: 1px solid black;
+}
+.brand-icons{
+  display: flex;
+  gap: 7px;
+}
