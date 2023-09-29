@@ -1,0 +1,106 @@
+.hero{
+    background-color: black;
+    
+    color: white;
+    // margin-top: 0rem;
+    display: flex;
+    justify-content: space-around;
+    // flex-wrap: wrap;
+    padding-top: 5rem;
+
+    .hero-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        h1{
+          font-size: 3rem;
+
+        }
+        p{
+            // align-items: center;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .hero-btn{
+           margin: 2rem;
+           display: flex;
+           gap: 2rem;
+          
+            button{
+                padding: 1rem 2rem;
+                border-radius: 33px;
+                border: none;
+                background-color: rgb(125, 10, 10);
+                color: white;
+                font-weight: 700;
+                cursor: pointer;
+                &:hover{
+                    background-color: rgb(211, 29, 29);
+                }
+            }
+            .cat{
+                border: 1px solid white;
+                background-color: transparent;
+                color: rgb(223, 223, 223);
+
+                font-weight: 800;
+                &:hover{
+                    background-color: rgb(227, 211, 211);
+                    color: rgb(3, 2, 2);
+                }
+            }
+        }
+
+        .shopping{
+            p{
+                margin: 1rem;
+            }
+        }
+        .brand-icons{
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            img{
+                width: 100px;
+            }
+            .flipkart{
+                width: 30px;
+            }
+        }
+    }
+}
+
+
+@media (max-width:786px) {
+     .hero{
+        align-items: center;
+        flex-direction: column-reverse;
+       
+        .hero-content{
+            h1{
+              font-size: 1.3rem;
+            }
+            p{
+                font-size: 0.6rem;
+                margin: 1rem;
+            }
+
+            .hero-btn{
+                  button{
+                    padding: 0.9rem 1.3rem;
+                  }
+
+            }
+        }
+
+
+        .hero-image{
+            img{
+                width: 250px;
+              
+            }
+        }
+     }
+}
